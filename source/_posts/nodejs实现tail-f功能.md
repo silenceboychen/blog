@@ -2,7 +2,7 @@
 title: nodejs实现tail -f功能
 date: 2019-03-15 09:37:54
 categories: nodejs
-tags: nodejs, tailf
+tags: [nodejs, tailf]
 toc: true
 ---
 ```
