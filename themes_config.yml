@@ -4,7 +4,7 @@ menu:
   Archives: archives  # 归档
   Categories: categories  # 分类
   Tags: tags  # 标签
-  Repository: repository  # github repositories
+  # Repository: repository  # github repositories
   Books: books  # 豆瓣书单
   # Links: links  # 友链
   About: about  # 关于
