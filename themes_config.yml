@@ -47,7 +47,7 @@ config:
 
 # Pagination
 pagination:
-  number: false
+  number: true
   prev: 
     alwayShow: true
   next:
@@ -108,7 +108,7 @@ github:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: valine  # 启用哪种评论系统
+  type: gitalk  # 启用哪种评论系统
   disqus:  # enter disqus shortname here
   youyan: 
     uid: 1783844 # enter youyan uid 
@@ -121,11 +121,11 @@ comment:
     ClientSecret: 
     lazy: false
   gitalk: # gitalk. https://gitalk.github.io/
-    owner:  #必须. GitHub repository 所有者，可以是个人或者组织。
-    admin:  #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
-    repo:  #必须. GitHub repository.
-    ClientID:  #必须. GitHub Application Client ID.
-    ClientSecret:  #必须. GitHub Application Client Secret.
+    owner: silenceboychen #必须. GitHub repository 所有者，可以是个人或者组织。
+    admin: silenceboychen #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+    repo: silenceboychen.github.io #必须. GitHub repository.
+    ClientID: 815c509d7ecae94fb6c5 #必须. GitHub Application Client ID.
+    ClientSecret: fee9e24b8a9cd9a7c17071a22451570532a2a00f #必须. GitHub Application Client Secret.
   valine: # Valine. https://valine.js.org
     appid:  # your leancloud application appid
     appkey:  # your leancloud application appkey
