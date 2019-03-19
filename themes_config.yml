@@ -188,7 +188,7 @@ profile:
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: 陈天寒
   author_title: Backend Developer
-  author_description: 个人简介。
+  author_description: 待我长发及腰，bug可否改好？
   location: Shenzhen, China
   follow: https://github.com/silenceboychen
   # Social Links

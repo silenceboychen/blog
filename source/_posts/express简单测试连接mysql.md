@@ -3,7 +3,7 @@ title: express简单测试连接mysql
 toc: true
 date: 2016-01-06 22:11:16
 categories: nodejs
-tags: [nodejs, mysql, express]
+tags: [nodejs, mysql, express.js]
 ---
 
 使用express应用生成器生成express模板后，先写package.json
