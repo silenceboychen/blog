@@ -2,8 +2,8 @@
 title: nodejs通过later实现定时执行任务
 toc: true
 date: 2016-08-08 09:45:57
-categories:
-tags:
+categories: nodejs
+tags: nodejs
 ---
 
 大多数情况我们都选用使用Linux的cron来控制定时执行的任务。当我们要维护多台计算机，几十个，几百个定时任务的时候，用cron会带来非常大的运维成本。可能写到程序中，就是一个不错的选择了。nodejs有一个later的插件可以简单实现该功能。
