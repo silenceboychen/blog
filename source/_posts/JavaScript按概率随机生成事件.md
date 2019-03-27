@@ -2,8 +2,8 @@
 title: JavaScript按概率随机生成事件
 toc: true
 date: 2017-08-02 12:20:03
-categories: javascript
-tags: javascript
+categories: 算法
+tags: [算法, javascript]
 ---
 
 ```
