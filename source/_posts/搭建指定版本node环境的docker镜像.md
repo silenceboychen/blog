@@ -1,7 +1,7 @@
 ---
 title: 搭建指定版本node环境的docker镜像
 toc: true
-date: 2019-03-17 17:36:12
+date: 2017-12-07 17:36:12
 categories: docker
 tags: [nodejs, docker]
 ---
