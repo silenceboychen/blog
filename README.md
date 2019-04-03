@@ -17,6 +17,7 @@ hexo项目目录下执行：
 cp image/wechatpayimg.jpeg ./themes/pure/source/images/donate/
 cp image/wechatpayimg.jpeg ./themes/pure/source/images/donate/
 cp image/avatar.jpeg ./themes/pure/source/images/
+cp image/favicon.ico ./themes/pure/source/
 cp themes_config.yml ./themes/pure/_config.yml
 ```
 将自己的配置拷贝进入主题目录下。
