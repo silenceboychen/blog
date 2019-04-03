@@ -42,7 +42,7 @@ config:
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
   menu_highlight: true # 是否开启当前菜单高亮显示
-  thumbnail: false # enable posts thumbnail, options: true, false
+  thumbnail: false # enable posts thumbnail, options: true, false 启用帖子缩略图
   excerpt_link: Read More
 
 # Pagination
@@ -195,7 +195,7 @@ profile:
   social:
     links:
       github: https://github.com/silenceboychen
-      # weibo: http://weibo.com/cofess
+      weibo: https://weibo.com/u/5124346546
       # twitter: https://twitter.com/iwebued
       # facebook: /
       # dribbble: /
@@ -215,7 +215,7 @@ profile:
     Github: https://github.com/silenceboychen
     Blog: http://www.silenceboy.com
     SegmentFault: https://segmentfault.com/u/silenceboy
-    # 微博: http://weibo.com/cofess
+    微博: https://weibo.com/u/5124346546
     # 花瓣: http://huaban.com/cofess
     # Behance: https://www.behance.net/cofess
   # My Personal Labels
