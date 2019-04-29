@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo-demo
-subtitle:
-description:
+title: blog
+subtitle: silenceboychen's blog
+description: silenceboychen的个人博客
 keywords:
 author: chenhao
 language: zh-CN
