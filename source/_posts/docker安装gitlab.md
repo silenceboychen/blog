@@ -19,15 +19,6 @@ GitLab 分为 社区版（Community Edition，缩写为 CE）和 企业版（Ent
 $ docker pull gitlab/gitlab-ce
 ```
 
-### 创建目录
-
-> 通常会将 GitLab 的配置 (etc) 、 日志 (log) 、数据 (data) 放到容器之外， 便于日后升级， 因此请先准备这三个目录。
-
-```
-mkdir -p /srv/gitlab/config
-mkdir -p /srv/gitlab/logs 
-mkdir -p /srv/gitlab/data
-```
 
 ### 启动运行
 
@@ -40,7 +31,6 @@ $ docker run --detach \
   --volume /srv/gitlab/config:/etc/gitlab \
   --volume /srv/gitlab/logs:/var/log/gitlab \
   --volume /srv/gitlab/data:/var/opt/gitlab \
-  --privileged=true \
   gitlab/gitlab-ce:latest
 ```
 
@@ -55,7 +45,6 @@ $ docker run --detach \
  * --volume /srv/gitlab/config:/etc/gitlab: 挂载目录
  * --volume /srv/gitlab/logs:/var/log/gitlab: 挂载目录
  * --volume /srv/gitlab/data:/var/opt/gitlab: 挂载目录
- * --privileged=true 使得容器内的root拥有真正的root权限。否则，container内的root只是外部的一个普通用户权限
  
 运行成功之后，可以使用下面的命令查看容器运行状态：
 
