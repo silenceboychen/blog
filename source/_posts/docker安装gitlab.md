@@ -106,7 +106,7 @@ gitlab_rails['smtp_domain'] = "qq.com" # 修改并不影响
 配置完成后保存，然后输入下面的命令使配置生效。
 
 ```
-$ sudo docker exec gitlab gitlab-ctl reconfigure
+$ docker exec gitlab gitlab-ctl reconfigure
 ```
 
 使配置生效之后我们可以使用 gitlab 自带的工具进行一下测试。依次执行下面的命令：
@@ -125,6 +125,23 @@ Notify.test_email('test_001@123.com', 'Message Subject', 'Message Body').deliver
 测试完成之后退出gitlab的bash工具，重启 gitlab 即可。
 
 ```
+$ docker restart gitlab
+```
+
+### 修改SSH
+
+因为项目启动时gitlab内部的22端口号映射到宿主机的端口号是8222，所以需要配置gitlab的ssh端口号：
+
+找到如下内容，将端口号修改为8222.
+
+```
+gitlab_rails['gitlab_shell_ssh_port'] = 8222
+```
+
+配置完成后保存，然后输入下面的命令使配置生效。
+
+```
+$ docker exec gitlab gitlab-ctl reconfigure
 $ docker restart gitlab
 ```
 
