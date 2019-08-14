@@ -2,8 +2,8 @@
 title: 部署Docker集群并使用Portainer管理
 toc: true
 date: 2019-08-14 12:34:06
-categories:
-tags:
+categories: docker
+tags: [docker, portainer]
 ---
 
 > 在有多台Docker的情况下，进行集群管理就十分重要了，Portainer也支持集群管理，Portainer可以和Swarm一起来进行集群管理操作。
@@ -136,13 +136,13 @@ CONTAINER ID        IMAGE                     COMMAND             CREATED       
 ```
 
 访问http://172.16.132.200:9000,   同样首次登陆需要注册用户，给admin用户设置密码：
-![](../images/portainer-login.png)
+![](/../images/portainer-login.png)
 
 集群模式, 这样一定要选择Remote, 输入docker-worker01的ip，然后点击Connect。
-![](../images/portainer-remote.png)
+![](/../images/portainer-remote.png)
 
 同样点击左边栏的"Endpoints" - "+add endpoint", 添加集群节点:
-![](../images/portainer-endpoints.png)
+![](/../images/portainer-endpoints.png)
 
 添加之后,点击左边栏的"Home", 右边就可以看到节点信息了,可以进行切换操作.
-![](../images/portainer-home.png)
+![](/../images/portainer-home.png)

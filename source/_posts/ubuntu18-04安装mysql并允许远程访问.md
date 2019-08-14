@@ -2,8 +2,8 @@
 title: ubuntu18.04安装mysql并允许远程访问
 toc: true
 date: 2019-07-23 18:29:37
-categories:
-tags:
+categories: mysql
+tags: [ubuntu, mysql]
 ---
 
 ### 安装
