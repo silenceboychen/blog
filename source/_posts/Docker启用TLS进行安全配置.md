@@ -151,7 +151,7 @@ mode of 'cert.pem' changed from 0644 (rw-r--r--) to 0444 (r--r--r--)
 添加如下行：
 
 ```
-ExecStart=/opt/kube/bin/dockerd  --tlsverify --tlscacert=/root/docker/ca.pem --tlscert=/root/docker/server-cert.pem --tlskey=/root/docker/server-key.pem -H unix:///var/run/docker.sock -H tcp://0.0.0.0:2375
+ExecStart=/usr/bin/dockerd  --tlsverify --tlscacert=/root/docker/ca.pem --tlscert=/root/docker/server-cert.pem --tlskey=/root/docker/server-key.pem -H unix:///var/run/docker.sock -H tcp://0.0.0.0:2375
 ```
 
 重启docker服务：
