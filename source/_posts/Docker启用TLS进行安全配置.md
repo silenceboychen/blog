@@ -60,7 +60,9 @@ root@docker-manager:~# openssl req -subj "/CN=$HOST" -sha256 -new -key server-ke
 
 ### 用CA签署公钥
 
-由于可以通过IP地址和DNS名称建立TLS连接，因此在创建证书时需要指定IP地址。例如，允许使用10.10.10.20和进行连接127.0.0.1：
+由于可以通过IP地址和DNS名称建立TLS连接，因此在创建证书时需要指定IP地址。例如，允许使用172.16.132.200和127.0.0.1进行连接：
+
+**这里遇到一个坑，如果IP后不指定本机ip，远程无法连接，不知道是不是配置哪里有问题，目前我会在下面的命令中添加`IP:$HOST`去解决问题**
 
 ```
 root@docker-manager:~# echo subjectAltName = DNS:$HOST,IP:172.16.132.200,IP:127.0.0.1 >> extfile.cnf
