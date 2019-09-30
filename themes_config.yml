@@ -189,7 +189,7 @@ profile:
   author: 陈天寒
   author_title: Backend Developer
   author_description: 待我长发及腰，bug可否改好？
-  location: Shenzhen, China
+  location: hangzhou, China
   follow: https://github.com/silenceboychen
   # Social Links
   social:
@@ -207,6 +207,7 @@ profile:
     Git: ★★★★☆
     Nodejs: ★★★★☆
     Javascript: ★★★☆☆
+    Java: ★★★☆☆
     Mysql: ★★★☆☆
     Docker: ★★★☆☆
     Go: ★★☆☆☆
