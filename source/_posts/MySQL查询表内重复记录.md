@@ -2,8 +2,8 @@
 title: MySQL查询表内重复记录
 toc: true
 date: 2016-08-04 10:02:52
-categories:
-tags:
+categories: mysql
+tags: mysql
 ---
 
 1、查找表中多余的重复记录，重复记录是根据单个字段（user_id）来判断
