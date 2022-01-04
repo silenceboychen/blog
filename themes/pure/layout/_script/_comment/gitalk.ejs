@@ -11,6 +11,7 @@
     admin: ['<%= theme.comment.gitalk.admin %>'],
     id: md5(location.pathname),
     distractionFreeMode: true,
+    proxy: '<%= theme.comment.gitalk.proxy %>',
     language: '<%= theme.comment.gitalk.language %>',
     enableHotKey: '<%= theme.comment.gitalk.enableHotKey %>'
   })
