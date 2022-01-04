@@ -135,7 +135,7 @@ comment:
     ClientSecret: fee9e24b8a9cd9a7c17071a22451570532a2a00f #必须. GitHub Application Client Secret.
     enableHotKey: true
     language: zh-CN
-    proxy: https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token
+    proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
     
   valine: # Valine. https://valine.js.org
     appid:  # your leancloud application appid
