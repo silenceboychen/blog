@@ -40,20 +40,25 @@ site:
 
 # config
 config:
-  skin: theme-black # 主题颜色 theme-black theme-blue theme-green theme-purple
+  skin: # 主题颜色 theme-black theme-blue theme-green theme-purple
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
-  menu_highlight: true # 是否开启当前菜单高亮显示
+  menu_highlight: false # 是否开启当前菜单高亮显示
   thumbnail: false # enable posts thumbnail, options: true, false
   excerpt_link: Read More
+  #New
+  isNewTabLinks: false #是否链接打开新标签页
+  autoUnfold: true # 默认展开文章目录
 
 # Pagination
 pagination:
-  number: true
+  number: false
   prev: 
     alwayShow: true
   next:
     alwayShow: true
+  midSize: 2 # 当前页码左右到省略号显示的页码数，默认2，表现为 1 ... 4 5 6 7 8 ... 10
+  showContent: true # 页面文章小于2篇时显示文章内容
 
 # Sidebar
 sidebar: right
@@ -92,7 +97,7 @@ donate:
     title: 微信支付
   # 支付宝打赏
   alipay: 
-    qrcode: images/donate/alipayimg.jpeg
+    qrcode: images/donate/alipayimg.jpeg 
     title: 支付宝
 
 # Share
@@ -104,7 +109,7 @@ share:
 
 # Github
 github: 
-  username: silenceboychen  # github username
+  username: cofess  # github username
 
 # Comment
 # Gitment
@@ -128,6 +133,9 @@ comment:
     repo: silenceboychen.github.io #必须. GitHub repository.
     ClientID: 815c509d7ecae94fb6c5 #必须. GitHub Application Client ID.
     ClientSecret: fee9e24b8a9cd9a7c17071a22451570532a2a00f #必须. GitHub Application Client Secret.
+    enableHotKey: true
+    language: zh-CN
+    
   valine: # Valine. https://valine.js.org
     appid:  # your leancloud application appid
     appkey:  # your leancloud application appkey
@@ -154,6 +162,7 @@ douban:
   user: 158356629 # 豆瓣用户名
   start: 0 # 从哪一条记录开始
   count: 100 # 获取豆瓣书单数据条数
+  apikey: 0df993c66c0c636e29ecbb5344252a4a # 豆瓣apikey
   
 # PV
 pv:
