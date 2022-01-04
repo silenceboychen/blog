@@ -5,7 +5,7 @@ menu:
   Categories: categories  # 分类
   Tags: tags  # 标签
   # Repository: repository  # github repositories
-  Books: books  # 豆瓣书单
+  # Books: books  # 豆瓣书单
   Links: links  # 友链
   # About: about  # 关于
   Love: love  # 
@@ -40,7 +40,7 @@ site:
 
 # config
 config:
-  skin: # 主题颜色 theme-black theme-blue theme-green theme-purple
+  skin: theme-black # 主题颜色 theme-black theme-blue theme-green theme-purple
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
   menu_highlight: false # 是否开启当前菜单高亮显示
