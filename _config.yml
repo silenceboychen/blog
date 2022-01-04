@@ -79,5 +79,5 @@ theme: pure
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/silenceboychen/silenceboychen.github.io.git
+  repo: git@github.com:silenceboychen/silenceboychen.github.io.git
   branch: master
