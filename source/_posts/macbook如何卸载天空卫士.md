@@ -6,7 +6,7 @@ categories: mac
 tags: [mac, 天空卫士]
 ---
 
-1. 首先找到按照天空卫士的目录：``/Library/Application Support/SkyGuard``
+1. 首先找到安装天空卫士的目录：``/Library/Application Support/SkyGuard``
 
 2. 电脑关机，长按开机键直到进入recovery模式, 点自己的用户，输入密码，点下一步，然后到左上方找到终端打开
 
