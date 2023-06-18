@@ -125,7 +125,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/silenceboychen/gostudy/demo_3/helloworld"
+	"github.com/silenceboychen/gostudy/demo_4/helloworld"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 	"io"
@@ -189,7 +189,7 @@ package main
 import (
 	"context"
 	"flag"
-	"github.com/silenceboychen/gostudy/demo_3/helloworld"
+	"github.com/silenceboychen/gostudy/demo_4/helloworld"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"io"
