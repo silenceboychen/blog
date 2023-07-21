@@ -33,26 +33,26 @@ site:
     width: 40
     height: 40
     url: ../images/logo.png
-  title: silenceboychen # 页面title
+  title: morty的个人博客 # 页面title
   favicon: /favicon.ico
   board: <p>欢迎交流与分享经验!</p> # 站点公告
-  copyright: false # 底部版权信息
+  copyright: true # 底部版权信息
 
 # config
 config:
   skin: theme-black # 主题颜色 theme-black theme-blue theme-green theme-purple
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
-  menu_highlight: false # 是否开启当前菜单高亮显示
+  menu_highlight: true # 是否开启当前菜单高亮显示
   thumbnail: false # enable posts thumbnail, options: true, false
   excerpt_link: Read More
   #New
-  isNewTabLinks: false #是否链接打开新标签页
+  isNewTabLinks: true #是否链接打开新标签页
   autoUnfold: true # 默认展开文章目录
 
 # Pagination
 pagination:
-  number: false
+  number: true
   prev: 
     alwayShow: true
   next:
@@ -109,7 +109,7 @@ share:
 
 # Github
 github: 
-  username: cofess  # github username
+  username: silenceboychen  # github username
 
 # Comment
 # Gitment
@@ -199,7 +199,7 @@ profile:
   enabled: true # Whether to show profile bar
   avatar: images/avatar.jpeg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: 陈天寒
+  author: morty
   author_title: Backend Developer
   author_description: 待我长发及腰，bug可否改好？
   location: hangzhou, China
@@ -208,7 +208,7 @@ profile:
   social:
     links:
       github: https://github.com/silenceboychen
-      weibo: https://weibo.com/u/5124346546
+      # weibo: https://weibo.com/u/5124346546
       # twitter: https://twitter.com/iwebued
       # facebook: /
       # dribbble: /
@@ -229,7 +229,7 @@ profile:
     Github: https://github.com/silenceboychen
     Blog: https://www.silenceboy.com
     SegmentFault: https://segmentfault.com/u/silenceboy
-    微博: https://weibo.com/u/5124346546
+    # 微博: https://weibo.com/u/5124346546
     # 花瓣: http://huaban.com/cofess
     # Behance: https://www.behance.net/cofess
   # My Personal Labels

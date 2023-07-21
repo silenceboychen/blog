@@ -186,7 +186,7 @@ profile:
   enabled: true # Whether to show profile bar
   avatar: images/avatar.jpeg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: 陈天寒
+  author: morty
   author_title: Backend Developer
   author_description: 待我长发及腰，bug可否改好？
   location: hangzhou, China
@@ -195,7 +195,7 @@ profile:
   social:
     links:
       github: https://github.com/silenceboychen
-      weibo: https://weibo.com/u/5124346546
+      # weibo: https://weibo.com/u/5124346546
       # twitter: https://twitter.com/iwebued
       # facebook: /
       # dribbble: /
@@ -216,7 +216,7 @@ profile:
     Github: https://github.com/silenceboychen
     Blog: https://www.silenceboy.com
     SegmentFault: https://segmentfault.com/u/silenceboy
-    微博: https://weibo.com/u/5124346546
+    # 微博: https://weibo.com/u/5124346546
     # 花瓣: http://huaban.com/cofess
     # Behance: https://www.behance.net/cofess
   # My Personal Labels
