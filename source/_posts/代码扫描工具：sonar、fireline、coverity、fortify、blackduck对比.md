@@ -1,5 +1,5 @@
 ---
-title: 代码扫描工具：sonar、fireline、coverity、fortity、blackduck对比
+title: 代码扫描工具：sonar、fireline、coverity、fortify、blackduck对比
 toc: true
 date: 2024-06-24 16:02:01
 categories: 代码扫描
