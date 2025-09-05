@@ -2,8 +2,8 @@
 title: fidl和arxml互转教程
 toc: true
 date: 2025-09-05 17:56:31
-categories:
-tags:
+categories: autosar
+tags: [fidl, arxml]
 ---
 
 ``fracon`` 命令行工具可以使用 ``maven`` 从源代码构建。本页介绍如何运行本地构建。 请注意，你的公司需要成为 ``AUTOSAR`` 组织的成员。如果不是会员，你将无法访问 ``artop.org``，因此无法使用 FARACON 工具。
