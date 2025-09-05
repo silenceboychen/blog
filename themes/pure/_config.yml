@@ -4,7 +4,7 @@ menu:
   Archives: archives  # 归档
   Categories: categories  # 分类
   Tags: tags  # 标签
-  # Repository: repository  # github repositories
+  Repository: repository  # github repositories
   # Books: books  # 豆瓣书单
   Links: links  # 友链
   # About: about  # 关于
@@ -200,7 +200,7 @@ profile:
   avatar: images/avatar.jpeg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: morty
-  author_title: Backend Developer
+  author_title: AI Engineer
   author_description: 待我长发及腰，bug可否改好？
   location: hangzhou, China
   follow: https://github.com/silenceboychen
@@ -217,13 +217,13 @@ profile:
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills 
   skills:
-    Git: ★★★★☆
+    AI Agent: ★★★★☆
     Nodejs: ★★★★☆
-    Javascript: ★★★☆☆
+    Python: ★★★☆☆
     Java: ★★★☆☆
-    Mysql: ★★★☆☆
+    MySQL: ★★★☆☆
     Docker: ★★★☆☆
-    Go: ★★☆☆☆
+    Go: ★★★☆☆
   # My Personal Links
   links:
     Github: https://github.com/silenceboychen
