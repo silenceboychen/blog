@@ -11,11 +11,11 @@ tags:
 
 <!-- more -->
 
-## 一、内容缺失问题的表现形式
+## 内容缺失问题的表现形式
 
 在实际应用中，RAG系统的内容缺失问题通常表现为以下几种典型场景：
 
-### 1.1 完全检索失败
+### 完全检索失败
 
 系统对于知识库中明确存在的信息无法检索到任何相关内容，导致大模型只能基于其预训练知识回答，或者直接承认"我不知道"。
 
@@ -24,7 +24,7 @@ tags:
 - 知识库中存在相关财报文档
 - 但检索结果为空，系统回答："抱歉，我没有找到相关信息"
 
-### 1.2 部分信息缺失
+### 部分信息缺失
 
 系统能够检索到相关内容，但关键信息片段缺失，导致答案不完整或存在逻辑断层。
 
@@ -33,7 +33,7 @@ tags:
 - 检索到配置步骤的前3步，但缺少关键的第4-6步
 - 生成的答案不完整，用户无法完成完整配置流程
 
-### 1.3 上下文割裂
+### 上下文割裂
 
 检索到的多个内容片段之间缺乏必要的连接信息，导致语义不连贯或逻辑关系不清晰。
 
@@ -42,9 +42,9 @@ tags:
 - 但缺少中间的"前置条件"和"注意事项"
 - 导致用户按照步骤操作时遇到未预期的问题
 
-## 二、内容缺失的三大根本原因
+## 内容缺失的三大根本原因
 
-### 2.1 切片策略不合理
+### 切片策略不合理
 
 **问题描述**：
 
@@ -83,7 +83,7 @@ tags:
 - **关键信息丢失**：重要内容被分割到不同chunk，检索时遗漏
 - **噪音干扰**：过大的chunk包含无关内容，降低检索精度
 
-### 2.2 向量召回率低
+### 向量召回率低
 
 **问题描述**：
 
@@ -127,7 +127,7 @@ tags:
 - **答案不全面**：只能基于部分信息生成回答
 - **用户体验差**：系统表现出"知识盲区"
 
-### 2.3 知识覆盖不全
+### 知识覆盖不全
 
 **问题描述**：
 
@@ -160,11 +160,11 @@ tags:
 - **信息时效性问题**：返回过时或错误信息
 - **无法进行精确定位**：缺少元数据辅助检索
 
-## 三、系统化的优化解决方案
+## 系统化的优化解决方案
 
-### 3.1 切片策略优化
+### 切片策略优化
 
-#### 3.1.1 根据文档结构智能切片
+#### 根据文档结构智能切片
 
 **语义感知切片（Semantic Chunking）**：
 
@@ -248,7 +248,7 @@ def structure_aware_chunking(document):
     return chunks
 ```
 
-#### 3.1.2 动态调整切片大小
+#### 动态调整切片大小
 
 根据内容复杂度和查询场景动态调整：
 
@@ -279,7 +279,7 @@ def adaptive_chunking(document, complexity_score):
     return semantic_chunking(document, chunk_size, overlap)
 ```
 
-#### 3.1.3 增加上下文窗口（Contextual Chunk）
+#### 增加上下文窗口（Contextual Chunk）
 
 为每个chunk添加上下文信息：
 
@@ -334,9 +334,9 @@ def create_contextual_chunks(document):
     return chunks
 ```
 
-### 3.2 提升向量召回率
+### 提升向量召回率
 
-#### 3.2.1 多向量检索策略（Hybrid Search）
+#### 多向量检索策略（Hybrid Search）
 
 结合多种检索方法提升召回率：
 
@@ -422,7 +422,7 @@ class HybridRetriever:
         return [item['doc'] for item in ranked_results]
 ```
 
-#### 3.2.2 查询改写与扩展（Query Rewriting）
+#### 查询改写与扩展（Query Rewriting）
 
 通过改写和扩展查询提升召回率：
 
@@ -533,7 +533,7 @@ def multi_query_retrieval(query: str, retriever, query_expander, top_k: int = 10
     return reranked_results[:top_k]
 ```
 
-#### 3.2.3 精调Embedding模型
+#### 精调Embedding模型
 
 针对特定领域fine-tune embedding模型：
 
@@ -607,9 +607,9 @@ def build_training_dataset(knowledge_base, queries):
     return training_data
 ```
 
-### 3.3 完善知识覆盖
+### 完善知识覆盖
 
-#### 3.3.1 建立索引质量评估体系
+#### 建立索引质量评估体系
 
 ```python
 class IndexQualityAnalyzer:
@@ -755,7 +755,7 @@ class IndexQualityAnalyzer:
         return report
 ```
 
-#### 3.3.2 知识库增量更新机制
+#### 知识库增量更新机制
 
 ```python
 class IncrementalIndexUpdater:
@@ -809,7 +809,7 @@ class IncrementalIndexUpdater:
         })
 ```
 
-#### 3.3.3 元数据增强
+#### 元数据增强
 
 为每个chunk添加丰富的元数据：
 
@@ -936,9 +936,9 @@ results = metadata_filtered_retrieval(
 )
 ```
 
-## 四、综合优化实践案例
+## 综合优化实践案例
 
-### 4.1 完整的优化Pipeline
+### 完整的优化Pipeline
 
 ```python
 class OptimizedRAGPipeline:
@@ -1054,7 +1054,7 @@ class OptimizedRAGPipeline:
         return optimization_plan
 ```
 
-### 4.2 监控和持续优化
+### 监控和持续优化
 
 建立监控体系，持续追踪系统表现：
 
@@ -1127,9 +1127,9 @@ class RAGMonitor:
         return knowledge_gaps
 ```
 
-## 五、最佳实践总结
+## 最佳实践总结
 
-### 5.1 切片策略最佳实践
+### 切片策略最佳实践
 
 1. **根据内容类型选择策略**
    - 技术文档：500-800 tokens，20% overlap
@@ -1146,7 +1146,7 @@ class RAGMonitor:
    - 文档类型、创建日期、作者
    - 前后chunk的引用关系
 
-### 5.2 检索优化最佳实践
+### 检索优化最佳实践
 
 1. **采用混合检索**
    - 密集向量检索（语义相似度）
@@ -1163,7 +1163,7 @@ class RAGMonitor:
    - 第一阶段：广召回（top_k × 3）
    - 第二阶段：Cross-Encoder精确重排序
 
-### 5.3 知识库管理最佳实践
+### 知识库管理最佳实践
 
 1. **建立质量评估体系**
    - 定期运行覆盖度测试
@@ -1180,7 +1180,7 @@ class RAGMonitor:
    - 分析失败查询，识别知识盲区
    - A/B测试不同优化策略的效果
 
-## 六、总结
+## 总结
 
 RAG系统的内容缺失问题是一个系统性工程，需要从**切片策略、检索算法、知识库管理**三个维度综合优化：
 
