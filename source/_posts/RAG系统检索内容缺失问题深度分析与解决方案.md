@@ -2,9 +2,8 @@
 title: RAG系统检索内容缺失问题深度分析与解决方案
 toc: true
 date: 2025-11-24 14:30:00
-categories: RAG
-tags: 
-  - RAG
+categories: AI
+tags: [AI, RAG]
 ---
 
 在构建和部署RAG（Retrieval-Augmented Generation，检索增强生成）系统的过程中，**内容缺失问题**是最常见也最影响用户体验的核心挑战之一。当用户提出问题时，系统无法检索到相关内容或检索结果不完整，直接导致生成的答案不准确、不完整甚至完全错误。本文将深入分析RAG检索内容缺失的根本原因，并提供系统化的优化策略。
